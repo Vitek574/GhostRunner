@@ -34,6 +34,7 @@ class Level(private val fileName: String) {
             '@' -> Hero(position)
             ' ' -> null
             '*' -> Finish(position)
+            'O' -> GhostVertical(position)
             else -> Wall(position, char)
         }
     }
